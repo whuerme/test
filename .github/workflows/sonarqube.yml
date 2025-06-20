@@ -18,7 +18,7 @@ jobs:
         run: |
           npm install -g sonarqube-scanner
           sonar-scanner \
-            -Dsonar.projectKey=your_vue_project_key \
+            -Dsonar.projectKey=GitHub-Actions\
             -Dsonar.sources=src \
             -Dsonar.javascript.file.suffixes=.js,.ts,.vue \
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
