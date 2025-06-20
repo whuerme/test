@@ -18,6 +18,7 @@ jobs:
         run: |
           npm install -g sonarqube-scanner
           sonar-scanner \
+            -Dsonar.host.url=$SONAR_HOST_URL \ 
             -Dsonar.projectKey=GitHub-Actions\
             -Dsonar.sources=src \
             -Dsonar.javascript.file.suffixes=.js,.ts,.vue \
